@@ -30,14 +30,15 @@ http://chiustin.blogspot.com/2019/01/ubuntu-1804-nvidia.html
 sudo apt-get install gcc
 sudo apt-get install make
 ```
-下面這行用以退出可能正在使用GPU的任何程序
+下面這行用以退出可能正在使用GPU的任何程序，才能進行安裝nvidia-driver
 
 ```shell
 sudo service gdm3 stop
 ```
+
 若沒執行可能會在安裝時出錯，如下
+
 ```shell
-否則會顯示
 ERROR: An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in your kernel.
 This may be because it is in use (for example, by an X server, a CUDA program, or the NVIDIA Persistence Daemon), 
 but this may also happen if your kernel was configured without support for module unloading.
@@ -55,8 +56,14 @@ reboot
 ```shell
 sudo add-apt-repository ppa:graphics-drivers/ppa 
 sudo apt-get update
-ubuntu-drivers devices
-sudo apt-get install nvidia-driver-415
+sudo apt-get install nvidia-driver-418
 sudo service gdm3 start
 reboot
 ```
+進入桌面，執行下面的命令，查看驅動的安裝狀態
+```shell
+sudo nvidia-smi
+```
+
+若有安裝成功應該出現以下畫面
+![alt text](https://drive.google.com/open?id=1liJP_3qMu13sZOFwF2cLvzvcTID27yIr)
