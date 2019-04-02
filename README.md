@@ -1,6 +1,6 @@
 Nvidia Docker installation 
 =======
-這份Readme是從零開始，安裝Ubuntu 18.04到docker的安裝、使用及開放外部使用者可以使用ipvr實驗室虛擬機的port以加速完成............
+這份Readme是從零開始，安裝Ubuntu 18.04到docker的安裝、使用及開放外部使用者可以使用ipvr實驗室虛擬機的port在CUDA下以加速完成你要執行的任務
 - linux setup 18.04
 - NVIDIA driver
 - cuda
@@ -26,3 +26,37 @@ http://chiustin.blogspot.com/2019/01/ubuntu-1804-nvidia.html
 
 安裝前的套件
 
+```shell
+sudo apt-get install gcc
+sudo apt-get install make
+```
+下面這行用以退出可能正在使用GPU的任何程序
+
+```shell
+sudo service gdm3 stop
+```
+若沒執行可能會在安裝時出錯，如下
+```shell
+否則會顯示
+ERROR: An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in your kernel.
+This may be because it is in use (for example, by an X server, a CUDA program, or the NVIDIA Persistence Daemon), 
+but this may also happen if your kernel was configured without support for module unloading.
+Please be sure to exit any programs that may be using the GPU(s) before attempting to upgrade your driver.
+If no GPU-based programs are running, you know that your kernel supports module unloading, 
+and you still receive this message, then an error may have occured that has corrupted an NVIDIA kernel module's usage count, 
+for which the simplest remedy is to reboot your computer.
+```
+記得重新啟動你的裝置
+```shell
+reboot
+```
+安裝驅動
+
+```shell
+sudo add-apt-repository ppa:graphics-drivers/ppa 
+sudo apt-get update
+ubuntu-drivers devices
+sudo apt-get install nvidia-driver-415
+sudo service gdm3 start
+reboot
+```
