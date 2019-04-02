@@ -66,4 +66,5 @@ sudo nvidia-smi
 ```
 
 若有安裝成功應該出現以下畫面
+
 ![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/ubuntu%20driver-device.png)
