@@ -73,9 +73,14 @@ sudo nvidia-smi
 
 # 3.CUDA installation
 
-先上Cuda官網安裝toolkit(請記得選擇是當的OS系統，如下，但請看你真實的系統)
+-先上Cuda官網安裝toolkit(請記得選擇是當的OS系統，如下，但請看你真實的系統)
 https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1704&target_type=runfilelocal
 ![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/CUDA.jpg)
 
-
+-接下來，如下網站進行裏頭的三行指令，cuda_9.1這邊要自己更動
+https://mark-down-now.blogspot.com/2018/05/pytorch-gpu-ubuntu-1804.html?fbclid=IwAR1clPJPvKOX0po0NkaL0rs96dH9Vv9gKQhmmSKGg-YpI0w9WzRsxMebgl4
+只取這三行執行
+cd ~/Downloads
+chmod 755 cuda_9.1.85_387.26_linux.run
+sudo ./cuda_9.1.85_387.26_linux.run –override
 
