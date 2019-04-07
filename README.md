@@ -70,3 +70,9 @@ sudo nvidia-smi
 若有安裝成功應該出現以下畫面
 
 ![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/ubuntu%20driver-device.png)
+
+# 3.CUDA installation
+先上Cuda官網安裝toolkit(請記得選擇是當的OS系統，如下，但請看你真實的系統)
+
+
+
