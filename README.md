@@ -83,6 +83,8 @@ https://mark-down-now.blogspot.com/2018/05/pytorch-gpu-ubuntu-1804.html?fbclid=I
 只取這三行執行
 
 cd ~/Downloads
+
 chmod 755 cuda_9.1.85_387.26_linux.run
+
 sudo ./cuda_9.1.85_387.26_linux.run –override
 
