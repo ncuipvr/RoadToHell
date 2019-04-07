@@ -72,7 +72,10 @@ sudo nvidia-smi
 ![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/ubuntu%20driver-device.png)
 
 # 3.CUDA installation
-先上Cuda官網安裝toolkit(請記得選擇是當的OS系統，如下，但請看你真實的系統)
 
+先上Cuda官網安裝toolkit(請記得選擇是當的OS系統，如下，但請看你真實的系統)
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1704&target_type=runfilelocal
 ![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/CUDA.jpg)
+
+
 
