@@ -74,5 +74,5 @@ sudo nvidia-smi
 # 3.CUDA installation
 先上Cuda官網安裝toolkit(請記得選擇是當的OS系統，如下，但請看你真實的系統)
 
-
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/CUDA.jpg)
 
