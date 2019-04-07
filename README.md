@@ -86,3 +86,5 @@ cd ~/Downloads
 chmod 755 cuda_9.1.85_387.26_linux.run
 sudo ./cuda_9.1.85_387.26_linux.run –override
 ```
+# 4.Docker installation
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04?fbclid=IwAR3D4T707CRGAX-iIL0OEUoZD8b4u3V-czKF8wPrfFkTCkJCCgN2EfEL4pY
