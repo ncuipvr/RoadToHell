@@ -101,6 +101,8 @@ apt-cache policy docker-ce
 sudo apt install docker-ce
 sudo systemctl status docker
 ```
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/3.jpg)
+
 Step 2 — Executing the Docker Command Without Sudo (Optional)
 ```shell
 sudo usermod -aG docker ${USER}
