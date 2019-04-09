@@ -88,3 +88,27 @@ sudo ./cuda_9.1.85_387.26_linux.run –override
 ```
 # 4.Docker installation
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04?fbclid=IwAR3D4T707CRGAX-iIL0OEUoZD8b4u3V-czKF8wPrfFkTCkJCCgN2EfEL4pY
+
+
+Step 1 — Installing Docker
+```shell
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt update
+apt-cache policy docker-ce
+sudo apt install docker-ce
+sudo systemctl status docker
+```
+Step 2 — Executing the Docker Command Without Sudo (Optional)
+```shell
+sudo usermod -aG docker ${USER}
+su - ${USER}
+id -nG
+```
+Step 3 — Working with Docker Images
+```shell
+docker search  ncuipvr/keras-with-ssh
+```
+
