@@ -109,4 +109,20 @@ sudo usermod -aG docker ${USER}
 su - ${USER}
 id -nG
 ```
-Step 3 — Working with Docker Images
+Step 3 — Install nvidia-docker2
+```shell
+sudo apt-get install -y nvidia-docker2=2.0.3+docker18.09.4-1 nvidia-container-runtime=2.0.0+docker18.09.4-1
+
+sudo docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
+```
+
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/docker%20nvidia-smi.png)
+
+測試Nvidia-docker有沒有辦法連到gpu實際運算
+
+```shell
+docker run --runtime=nvidia -it --rm tensorflow/tensorflow:latest-gpu \
+   python -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
+```
+
+跑出來的結果
