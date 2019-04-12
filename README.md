@@ -129,7 +129,7 @@ docker run --runtime=nvidia -it --rm tensorflow/tensorflow:latest-gpu \
 ```
 
 跑出來的結果
-[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/gpu_connect_test.png)
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/gpu_connect_test.png)
 
 開對外的port可以連進140.115.59.124裡
 ```shell
