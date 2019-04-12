@@ -62,14 +62,17 @@ sudo apt-get install nvidia-driver-418
 sudo service gdm3 start
 reboot
 ```
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/ubuntu%20driver-device.png)
+
+
 進入桌面，執行下面的命令，查看驅動的安裝狀態
 ```shell
 sudo nvidia-smi
 ```
-
 若有安裝成功應該出現以下畫面
 
-![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/ubuntu%20driver-device.png)
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/nvidia-smi.png)
+
 
 # 3.CUDA installation
 
