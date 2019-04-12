@@ -1,13 +1,6 @@
 Nvidia Docker installation 
 =======
 這份Readme是從零開始，安裝Ubuntu 18.04到docker的安裝、使用及開放外部使用者可以使用ipvr實驗室虛擬機的port在CUDA下以加速完成你要執行的任務
-- linux setup 18.04
-- NVIDIA driver
-- cuda
-- docker
-- docker image
-- shell script
-- vscode  //work_env
 
 # 1.	先裝好Ubuntu如下網站所示
 先製作Live USB隨身碟的軟體Unetbootin，如下網站所示
