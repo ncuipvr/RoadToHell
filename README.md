@@ -137,13 +137,13 @@ sudo docker run --rm -p 10000:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jov
 ```
 開啟之後輸出應該長這樣
 
-[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/key_token.png)
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/key_token.png)
 
 開啟網頁 IP:port 如下圖
 
 password 可以貼token
-[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/jupyter_enterance.png)
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/jupyter_enterance.png)
 
 進入後應如下
 
-[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/jupyterLab.png
+![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/jupyterLab.png)
