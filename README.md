@@ -82,11 +82,11 @@ cd ~/Downloads
 chmod 755 cuda_9.1.85_387.26_linux.run
 sudo ./cuda_9.1.85_387.26_linux.run –override
 ```
-# 4.Docker installation( including Nvidia-docker ) & testing GPU on Nvidia-docker 
+# 4.Docker 安裝( 含NVIDIA-docker )& 測試 NVIDIA-docker上的GPU 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04?fbclid=IwAR3D4T707CRGAX-iIL0OEUoZD8b4u3V-czKF8wPrfFkTCkJCCgN2EfEL4pY
 
 
-Step 1 — Installing Docker
+Step 1 — 安裝 Docker
 ```shell
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
