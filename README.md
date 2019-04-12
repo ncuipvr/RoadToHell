@@ -130,3 +130,20 @@ docker run --runtime=nvidia -it --rm tensorflow/tensorflow:latest-gpu \
 
 跑出來的結果
 [image](https://github.com/ncuipvr/RoadToHell/blob/master/im/gpu_connect_test.png)
+
+開對外的port可以連進140.115.59.124裡
+```shell
+sudo docker run --rm -p 10000:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work jupyter/datascience-notebook:9b06df75e445
+```
+開啟之後輸出應該長這樣
+
+[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/key_token.png)
+
+開啟網頁 IP:port 如下圖
+
+password 可以貼token
+[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/jupyter_enterance.png)
+
+進入後應如下
+
+[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/jupyterLab.png
