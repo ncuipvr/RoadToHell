@@ -110,9 +110,3 @@ su - ${USER}
 id -nG
 ```
 Step 3 — Working with Docker Images
-
-![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/2.jpg)
-```shell
-docker search  ncuipvr/keras-with-ssh
-```
-
