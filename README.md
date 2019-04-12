@@ -129,4 +129,4 @@ docker run --runtime=nvidia -it --rm tensorflow/tensorflow:latest-gpu \
 ```
 
 跑出來的結果
-[image](https://github.com/ncuipvr/RoadToHell)
+[image](https://github.com/ncuipvr/RoadToHell/blob/master/im/gpu_connect_test.png)
