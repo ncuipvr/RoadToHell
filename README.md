@@ -106,7 +106,7 @@ sudo systemctl status docker
 ```
 ![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/3.jpg)
 
-Step  — Install nvidia-docker2
+Step 2 — Install nvidia-docker
 ```shell
 sudo apt-get install -y nvidia-docker2=2.0.3+docker18.09.4-1 nvidia-container-runtime=2.0.0+docker18.09.4-1
 
