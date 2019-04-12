@@ -131,7 +131,7 @@ docker run --runtime=nvidia -it --rm tensorflow/tensorflow:latest-gpu \
 跑出來的結果
 ![image](https://github.com/ncuipvr/RoadToHell/blob/master/im/gpu_connect_test.png)
 
-開對外的port可以連進140.115.59.124裡
+開一個對外的port，讓外部用戶可以連進140.115.59.124 的一個docker image來訓練資料或是進行其他計算複雜的程式
 ```shell
 sudo docker run --rm -p 10000:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work jupyter/datascience-notebook:9b06df75e445
 ```
