@@ -22,6 +22,7 @@ http://chiustin.blogspot.com/2019/01/ubuntu-1804-nvidia.html
 安裝前的套件
 
 ```shell
+sudo apt-get update
 sudo apt-get install gcc
 sudo apt-get install make
 ```
@@ -101,6 +102,17 @@ sudo systemctl status docker
 
 Step 2 — Install nvidia-docker
 ```shell
+
+#curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+#distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+#curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+#sudo apt-get update
+
+# Install nvidia-docker2 and reload the Docker daemon configuration
+sudo apt-get install -y nvidia-docker2
+sudo pkill -SIGHUP dockerd
+
+
 sudo apt-get install -y nvidia-docker2=2.0.3+docker18.09.4-1 nvidia-container-runtime=2.0.0+docker18.09.4-1
 
 sudo docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
@@ -111,7 +123,7 @@ sudo docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 測試Nvidia-docker有沒有辦法連到gpu實際運算
 
 ```shell
-docker run --runtime=nvidia -it --rm tensorflow/tensorflow:latest-gpu \
+sudo docker run --runtime=nvidia -it --rm tensorflow/tensorflow:latest-gpu \
    python -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
 ```
 
